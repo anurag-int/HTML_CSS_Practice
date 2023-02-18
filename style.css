@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* remove the scroll bar*/
+}
+
+body{
+    background-color: rgb(0, 11, 30);
+    color: #fff;
+    font-family: 'Unbounded', cursive;
+}
+
+nav{
+    display: flex;          /* This will help us to arrange all items in a container in row form*/
+    /* flex-direction: column;  */
+
+    justify-content: space-between; /* provide space b/w flexed elements*/
+    align-items: center;
+    height: 8vh;
+    padding:2vh;
+}
+
+.logo
+{   
+    color: rgb(0, 195, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3vh;
+}
+
+
+ul{
+    list-style: none; /* this will remove the bullet from the list */
+    display: flex;
+    gap: 3vw;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+button{
+    background: linear-gradient(135deg,rgb(0, 255, 242),rgb(0, 162, 255));
+    border: none;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    height: 4vh;
+    border-radius: 5px;
+    font-family: 'Unbounded', cursive;
+    box-shadow: 0 1vh 2vh rgba(0, 255, 242, 0.397);
+    cursor: pointer;
+}
+
+.blur_cirle_1,.blur_cirle_2
+{
+    height: 80vh;
+    width: 80vh;
+    background: linear-gradient(135deg,rgb(0, 255, 242),rgb(0, 162, 255));
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute; /* this reduce the space of occupied object to 0 */
+    filter: blur(30vh);
+    opacity: 0.2;
+}
+
+.blur_cirle_1{
+    top: -10vh;
+    left: -10vh;
+}
+
+.blur_cirle_2{
+    right: -10vh;
+    bottom: -10vh;
+}
+
+h1{
+    text-transform: uppercase;
+    display: flex;
+    height: calc(100vh - 14vh);
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+}
+
+.image{
+    position: absolute;
+    bottom: -40vh;
+    display: flex;
+    width: 100vw;
+    z-index: -1;
+    justify-content: center;
+}
+
+img{
+    border-radius: 50%;
+    height:80vh;
+    width: auto;
+}
